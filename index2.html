@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Timer and Stopwatch</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#timer">Timer</a></li>
+                <li><a href="#stopwatch">Stopwatch</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>Introducing the Timer and Stopwatch application, your ultimate time management companion. Whether you need to count down to important events or track elapsed time with precision, we've got you covered.</p>
+    </section>
+    
+    <section id="timer" class="container timer">
+        <h2>Countdown Timer</h2>
+        <input type="number" id="timerInput" placeholder="Enter time (in seconds)">
+        <button id="startTimer">Start</button>
+        <button id="stopTimer">Stop</button>
+        <button id="resetTimer">Reset</button>
+        <div id="timerDisplay">00:00</div>
+    </section>
+
+    <section id="stopwatch" class="container stopwatch">
+        <h2>Stopwatch</h2>
+        <button id="startStopwatch">Start</button>
+        <button id="stopStopwatch">Stop</button>
+        <button id="resetStopwatch">Reset</button>
+        <div id="stopwatchDisplay">00:00:00</div>
+    </section>
+
+    <footer>
+        &copy; 2023 Timer and Stopwatch. All rights reserved.
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

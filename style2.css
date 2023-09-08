@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom,  #8de9ec, #5d8f91);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8de9ec; /* Green theme */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #38818e; /* Darker green for hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Timer and Stopwatch Styles */
+.timer, .stopwatch {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.timer h2, .stopwatch h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #000000; /* Green theme */
+}
+
+.timer input[type="number"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.timer button{
+    background-color: #4CAF50; /* Green theme */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.timer button:hover{
+    background-color: #388E3C; /* Darker green for hover */
+}
+
+
+.stopwatch button {
+    background-color: #4CAF50; /* Green theme */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.stopwatch button:hover {
+    background-color: #388E3C; /* Darker green for hover */
+}
+
+.timer #timerDisplay, .stopwatch #stopwatchDisplay {
+    font-size: 36px;
+    margin-top: 10px;
+    color: #ff0000;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #5d8f91; /* Green theme */
+    color: #fff;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animation for the Stopwatch */
+.stopwatch #stopwatchDisplay {
+    font-size: 36px;
+    margin-top: 10px;
+    color: #333;
+    transition: transform 0.5s ease-in-out; /* Add a transition for smooth animation */
+    transform-origin: center;
+}
+
+@keyframes stopwatchAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.stopwatch.running #stopwatchDisplay {
+    animation: stopwatchAnimation 1s linear infinite;
+}
